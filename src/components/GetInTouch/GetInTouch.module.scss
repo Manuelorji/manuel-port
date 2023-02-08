@@ -1,0 +1,64 @@
+.getInTouch {
+  @apply h-screen relative flex flex-col items-center px-32 justify-center bg-black text-white;
+
+  img {
+    user-select: none;
+  }
+  .contactsBg {
+    border-radius: 20%;
+    // background-blend-mode: darken;
+  }
+
+  .contactsBgSm {
+    border-radius: 50%;
+    position: absolute;
+    top: 73%;
+    left: 73%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 1px 5px 1px #fff;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+  }
+
+  .contactsImg {
+    width: 25px;
+  }
+}
+
+// Bounce animation
+@keyframes bounce {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+
+// mobile responsiveness
+@media screen and (min-width: 441px) and (max-width: 660px) {
+  .getInTouch {
+    @apply px-4 text-sm;
+
+    .contactsBgSm {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .getInTouch {
+    @apply px-2 text-sm;
+
+    .contactsBgSm {
+      width: 20px;
+      height: 20px;
+    }
+
+    .contactsImg {
+      width: 20px;
+    }
+  }
+}

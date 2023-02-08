@@ -1,0 +1,35 @@
+.myProjects {
+  @apply bg-black h-screen flex items-center justify-evenly py-20;
+
+  .projCard {
+    @apply cursor-pointer flex flex-col  items-center justify-between w-56 h-56 shadow-sm shadow-blue-50 transition-all ease-in-out duration-500 hover:scale-110 hover:shadow-blue-300 p-4 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-blue-500 to-blue-50;
+
+    &:hover {
+      svg {
+        stroke: black;
+        stroke-width: 0.25pt;
+        path {
+          fill: rgb(46, 103, 179);
+        }
+      }
+    }
+  }
+}
+
+// Mobile responsiveness
+
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .myProjects {
+    @apply flex-col;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .myProjects {
+    @apply flex-col;
+
+    .projCard {
+      @apply w-40 h-40;
+    }
+  }
+}

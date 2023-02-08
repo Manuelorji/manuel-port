@@ -1,0 +1,159 @@
+.hero {
+  user-select: none;
+  @apply container h-screen bg-black flex justify-evenly items-center px-32;
+  max-width: 100%;
+}
+
+.heroImg {
+  border-radius: 50%;
+}
+
+.heroText {
+  @apply flex flex-col gap-3;
+}
+
+.btns {
+  @apply flex gap-3 select-none;
+}
+
+.btns button {
+  position: relative;
+  appearance: auto;
+  @apply bg-gradient-to-r from-blue-900 to-blue-400 p-2 rounded;
+}
+
+.btns button:hover {
+  filter: brightness(130%);
+}
+
+.hamburgerMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  width: 30%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(19, 26, 39, 0.5);
+  backdrop-filter: blur(5px);
+
+  @apply hidden;
+}
+
+.closeBtn {
+  cursor: pointer;
+}
+
+.navLink {
+  @apply font-semibold text-center text-lg  transition-all ease-in-out duration-500 hover:bg-clip-text  hover:text-transparent hover:bg-gradient-to-r from-blue-500 to-blue-50 cursor-pointer;
+}
+
+/* button::before:hover {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  filter: brightness(90%);
+
+  @apply bg-gradient-to-r from-purple-500 to-blue-400 p-2 rounded;
+  transition: all 0.5s ease-in-out 0s;
+} */
+
+h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(81, 101, 167); /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* margin: 0 auto; */
+  /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: 0.15em; */
+  /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (min-width: 1024px) and (max-width: 1330px) {
+  .hero {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .hamburgerMenu {
+    width: 50%;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .heroImg {
+    width: 100%;
+    @apply px-8;
+  }
+
+  .heroText {
+    @apply gap-2;
+  }
+
+  .heroText h1 {
+    font-size: x-large;
+  }
+  .heroText p {
+    font-size: small;
+  }
+
+  .btns {
+    justify-content: center;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  .hamburgerMenu {
+    width: 100%;
+    @apply text-sm;
+  }
+  .hero {
+    @apply px-12;
+  }
+
+  .heroImg {
+    @apply px-4;
+  }
+
+  .heroText {
+    @apply gap-1;
+  }
+}
