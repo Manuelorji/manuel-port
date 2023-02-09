@@ -1,6 +1,6 @@
 .hero {
   user-select: none;
-  @apply container h-screen overflow-scroll bg-black flex justify-evenly items-center px-32;
+  @apply container h-screen bg-black flex justify-evenly items-center px-32;
   max-width: 100%;
 }
 
