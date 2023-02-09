@@ -43,7 +43,7 @@ const Hero = ({ activeLink, setActiveLink, navLinks, hamburgerMenu }) => {
           </span>
           the movement in making the world a better place as we make
           <br />
-          positive impact in Tech
+          positive impact on Tech
           <span className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-50">
             now.
           </span>

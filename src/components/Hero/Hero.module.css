@@ -107,6 +107,9 @@ h1 {
   .hero {
     justify-content: space-between;
   }
+  .hamburgerMenu {
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 1023px) {

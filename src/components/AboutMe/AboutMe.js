@@ -107,7 +107,7 @@ const AboutMe = () => {
       </p>
       <br />
       <h1 className="text-blue-200 font-semibold">Technologies I use:</h1>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex gap-2 flex-wrap">
         {technologies.map((technology, i) => (
           <div
             className="flex flex-col justify-between items-center cursor-pointer  transition-all ease-in-out duration-500 hover:scale-110 "
