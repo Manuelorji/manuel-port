@@ -4,6 +4,10 @@
   .techSkillsImg {
     width: 70px;
   }
+
+  .techSkillsTitle {
+    @apply text-sm;
+  }
 }
 
 // Mobile Responsiveness
