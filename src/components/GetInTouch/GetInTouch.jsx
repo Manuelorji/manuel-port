@@ -25,7 +25,7 @@ const contacts = [
   {
     img: resume,
     title: " My Resume",
-    href: "https://drive.google.com/uc?export=download&id=1mdjzlZXFjsrHD2Usx2RRqBFlxG0c_jeH",
+    href: "https://docs.google.com/document/d/1pZLY5RGeWPJ62QVVB8JAlf0obmXRm1K6/edit?usp=sharing&ouid=109263444424891882626&rtpof=true&sd=true",
   },
 ];
 
