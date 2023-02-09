@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 660px) {
   .aboutMe {
-    @apply py-12 px-10 text-sm;
+    @apply h-fit py-28 px-10 text-sm;
 
     .techSkillsImg {
       width: 30px;
