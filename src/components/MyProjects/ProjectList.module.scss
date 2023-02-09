@@ -33,7 +33,7 @@
     .jsProj,
     .rxProj,
     .nxtProj {
-      @apply flex flex-wrap gap-2;
+      @apply grid grid-cols-4 gap-2;
 
       .jsProjCard,
       .rxProjCard,
@@ -51,7 +51,7 @@
     .jsProj,
     .rxProj,
     .nxtProj {
-      @apply flex flex-wrap gap-2;
+      @apply grid grid-cols-3 gap-2;
 
       .jsProjCard,
       .rxProjCard,
