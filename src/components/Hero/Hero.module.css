@@ -102,13 +102,15 @@ h1 {
 }
 
 /* Mobile Responsiveness */
+@media screen and (min-width: 1024px) {
+  .hamburgerMenu {
+    visibility: hidden;
+  }
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1330px) {
   .hero {
     justify-content: space-between;
-  }
-  .hamburgerMenu {
-    visibility: hidden;
   }
 }
 
