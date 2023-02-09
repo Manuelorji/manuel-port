@@ -2,7 +2,7 @@
   @apply h-80 bg-black text-white px-32;
 
   .jsProj {
-    @apply h-screen grid grid-cols-5  grid-rows-3 align-middle gap-3 py-28;
+    @apply h-screen overflow-scroll grid grid-cols-5  grid-rows-3 align-middle gap-3 py-28;
 
     .jsProjCard {
       @apply flex flex-col h-36 w-36 text-center justify-between items-center p-2 shadow-sm shadow-blue-50 transition-all ease-in-out duration-500 hover:scale-110 hover:shadow-blue-300 cursor-pointer;
@@ -10,7 +10,7 @@
   }
 
   .rxProj {
-    @apply h-screen grid grid-cols-5 grid-rows-3 align-middle gap-3 py-28;
+    @apply h-screen overflow-scroll  grid grid-cols-5 grid-rows-3 align-middle gap-3 py-28;
 
     .rxProjCard {
       @apply flex flex-col h-36 w-36 text-center justify-between items-center p-2 shadow-sm shadow-blue-50 transition-all ease-in-out duration-500 hover:scale-110 hover:shadow-blue-300 cursor-pointer;
@@ -18,7 +18,7 @@
   }
 
   .nxtProj {
-    @apply h-screen grid grid-cols-5 grid-rows-3 align-middle gap-3 py-28;
+    @apply h-screen overflow-scroll  grid grid-cols-5 grid-rows-3 align-middle gap-3 py-28;
 
     .nxtProjCard {
       @apply flex flex-col h-36 w-36 text-center justify-between items-center p-2 shadow-sm shadow-blue-50 transition-all ease-in-out duration-500 hover:scale-110 hover:shadow-blue-300 cursor-pointer;
