@@ -7,6 +7,10 @@ import git from "../../Images/git.svg";
 import javaScript from "../../Images/javascript.svg";
 import scss from "../../Images/scss.svg";
 import aos from "../../Images/aos.png";
+import nodeJs from "../../Images/nodejs.svg";
+import mongoDb from "../../Images/mongodb.svg";
+import postgresql from "../../Images/postgresql.png";
+
 import framerMotion from "../../Images/framer motion.png";
 import corel from "../../Images/corel.svg";
 import styles from "./AboutMe.module.scss";
@@ -39,6 +43,18 @@ const technologies = [
   {
     img: reactjs,
     title: "React.js",
+  },
+  {
+    img: nodeJs,
+    title: "Node.js",
+  },
+  {
+    img: postgresql,
+    title: "Postgresql",
+  },
+  {
+    img: mongoDb,
+    title: "MongoDb",
   },
   {
     img: git,

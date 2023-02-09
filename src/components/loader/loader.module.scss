@@ -1,0 +1,12 @@
+.loader {
+  @apply h-screen bg-black flex justify-center items-center;
+}
+
+// Mobile Responsiveness
+@media screen and (max-width: 460px) {
+  .loader {
+    img {
+      width: 50%;
+    }
+  }
+}

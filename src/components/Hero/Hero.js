@@ -74,13 +74,17 @@ const Hero = ({ activeLink, setActiveLink, navLinks, hamburgerMenu }) => {
           {navLinks.map((navLink, i) => (
             <div
               onClick={() => setActiveLink(navLink.href)}
-              className={`styles.navLink ${
+              className={` ${
                 activeLink === navLink.href &&
                 "bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-50"
               }`}
               key={i}
             >
-              <a onClick={hideNavLinks} href={navLink.href}>
+              <a
+                className={styles.navLink}
+                onClick={hideNavLinks}
+                href={navLink.href}
+              >
                 {navLink.title}
               </a>
             </div>

@@ -21,6 +21,10 @@
 @media screen and (min-width: 420px) and (max-width: 800px) {
   .myProjects {
     @apply flex-col;
+
+    .projCard {
+      @apply w-36 h-36;
+    }
   }
 }
 
@@ -29,7 +33,7 @@
     @apply flex-col;
 
     .projCard {
-      @apply w-40 h-40;
+      @apply w-32 h-32;
     }
   }
 }
