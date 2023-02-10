@@ -48,6 +48,22 @@ const App = () => {
 
   return (
     <main className=" h-screen overflow-hidden text-white">
+      <Nav
+        navLinks={navLinks}
+        activeLink={activeLink}
+        setActiveLink={setActiveLink}
+        hamburgerMenu={hamburgerMenu}
+      />
+      <Hero
+        navLinks={navLinks}
+        activeLink={activeLink}
+        setActiveLink={setActiveLink}
+        hamburgerMenu={hamburgerMenu}
+      />
+      <MyProjects />
+      <AboutMe />
+      <GetInTouch />
+      <ProjectsList />
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -125,23 +141,6 @@ const App = () => {
           detectRetina: true,
         }}
       />
-
-      <Nav
-        navLinks={navLinks}
-        activeLink={activeLink}
-        setActiveLink={setActiveLink}
-        hamburgerMenu={hamburgerMenu}
-      />
-      <Hero
-        navLinks={navLinks}
-        activeLink={activeLink}
-        setActiveLink={setActiveLink}
-        hamburgerMenu={hamburgerMenu}
-      />
-      <MyProjects />
-      <AboutMe />
-      <GetInTouch />
-      <ProjectsList />
     </main>
   );
 };

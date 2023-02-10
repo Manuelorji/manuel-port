@@ -13,7 +13,7 @@
 }
 
 .btns {
-  @apply flex gap-3 select-none;
+  @apply flex gap-4 select-none mt-1;
 }
 
 .btns button {
@@ -123,6 +123,11 @@ h1 {
     @apply text-sm;
   }
 
+  h1 {
+    animation: initial;
+    border: none;
+  }
+
   .hero {
     flex-direction: column-reverse;
     justify-content: center;
@@ -160,6 +165,11 @@ h1 {
 
   .navLink {
     @apply text-sm;
+  }
+
+  h1 {
+    animation: initial;
+    border: none;
   }
 
   .hero {
